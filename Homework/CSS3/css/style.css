@@ -1,0 +1,33 @@
+body {
+	border-style: double;
+}
+
+.header-photo, .menu-photo {
+	text-align: center;
+	margin: 20px;
+}
+
+
+.menu-button-container {
+	border-bottom: 1px solid black;
+	border-top: 2px solid black;
+	max-width: 600px;
+	justify-content: space-evenly;
+	font-family: 'Merriweather';
+	letter-spacing: 1px;
+	display: flex;
+	text-transform: uppercase;
+	padding: 15px;
+	margin: auto;
+}
+
+.menu-button-main:hover, .menu-button-sale:hover, .menu-button-repair:hover, .menu-button-about:hover, .menu-button-contacts:hover {
+	color: orangered;
+}
+
+p {
+	text-align: center;
+	width: 600px;
+	margin: auto;
+	font-family: 'Cousine';
+}
