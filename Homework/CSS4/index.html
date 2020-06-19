@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="lt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style/style.css" rel="stylesheet">
+		<title>Apklausos forma</title>
+	</head>
+
+	<body>
+		<form>
+			<fieldset class="first-table">
+				<table class="name-wrapper">
+					<legend class="clients-information">Jūsų informacija</legend>
+						<tr>
+							<td>
+								<label for="name">
+									Vardas:
+								</label>
+							</td>
+							<td>
+								<input id="name" type="text" name="name">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<lable for="last-name">
+									Pavardė:
+								</lable>
+							</td>
+							<td>
+								<input id="last-name" type="text" name="last-name">
+							</td>
+						</tr>
+				</table>
+			</fieldset>
+			<fieldset class="second-table">
+				<table class="second-table-wrapper">
+					<legend class="questions">Klausimai</legend>
+						<tr>
+							<td>
+								<label>
+									Kaip sužinojote apie mus?
+								</label>
+								<select class="how-you-know-about-us">
+									<option value="">Google</option>
+									<option value="Rekomendacija">Rekomendacija</option>
+									<option value="Internetinė reklama">Internetinė reklama</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									Ar aspilankysite vėl?
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="yes" name="come-again">
+								<label for="yes" class="will-you-visit-again-yes">
+									Taip
+								</label>
+
+								<input type="radio" id="no" name="come-again">
+								<label for="no" class="will-you-visit-again-no">Ne</label>
+
+								<input type="radio" id="maybe" name="come-again">
+								<label for="maybe" class="will-you-visit-again-maybe">Galbūt</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									Ką manote apie kursą?
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<textarea rows="7" cols="80" placeholder="Rašykite viską ką galvojate" class="about-this-course"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="C#" name="programming-C#">
+								<label for="C#">C#</label>
+
+								<input type="checkbox" id="JAVA" name="programming-JAVA">
+								<label for="JAVA">JAVA</label>
+
+								<input type="checkbox" id="PHP" name="programming-PHP">
+								<label for="PHP">PHP</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="HTML" name="programming-HTML">
+								<label for="HTML">HTML</label>
+
+								<input type="checkbox" id="CSS" name="programming-CSS">
+								<label for="CSS">CSS</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="Python" name="programming-Python">
+								<label for="Python">Python</label>
+
+								<input type="checkbox" id="Ruby" name="programming-Ruby">
+								<label for="Ruby">Ruby</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="submit-button">
+								<input type="submit" value="Siųsti">
+							</td>
+						</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>
