@@ -1,0 +1,34 @@
+.clients-information, .questions {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.first-table {
+	background-color: greenyellow;
+	width: 600px;
+}
+
+.second-table {
+	background-color: orange;
+	width: 600px;
+}
+
+.about-this-course {
+	background-color: lightgrey;
+}
+
+.second-table-wrapper, .name-wrapper {
+	font-style: italic;
+}
+
+.submit-button {
+	text-align: center;
+}
+
+.how-you-know-about-us {
+	background-color: darkviolet;
+}
+
+.will-you-visit-again-yes:hover, .will-you-visit-again-no:hover, .will-you-visit-again-maybe:hover {
+	color: aqua;
+}
