@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="lt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style/style.css" rel="stylesheet">
+		<title>Registracija</title>
+	</head>
+
+	<body>
+		<h1>Registracija į renginį</h1>
+		<div class="registration-form-wrapper">
+			<div class="registration-form">
+				<h2>Registracijos forma</h2>
+				<p>
+					Jeigu norite užsiregistruoti į renginį, užpildykite žemiau esančią formą. Žemiau lentelėje galite matyti jau užsiregistravusius dalyvius.
+				</p>
+			</div>
+			<div class="registration-information-container">
+				<form>
+
+					<div class="first-name-wrapper">
+						<label class="user-name" for="first-name">
+							Vardas
+						</label>
+						<input class="first-input" id="first-name" type="text" name="first-name">
+					</div>
+
+					<div class="last-name-wrapper">
+						<lable class="user-last-name" for="last-name">
+							Pavardė
+						</lable>
+						<input class="second-input" id="last-name" type="text" name="last-name">
+					</div>
+
+					<div class="user-email-wrapper">
+						<label class="user-email" for="email">
+							Elektroninis paštas
+						</label>
+						<input class="third-input" id="email" type="email" name="email">
+					</div>
+
+					<div class="submit-form-wrapper">
+					<input type="submit" value="Registruoti" class="submit-form-button">
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+		<div class="already-registered-user-wrapper">
+			<div class="registered-users">
+				<h2>Jau užsiregistravę dalyviai:</h2>
+			</div>
+
+			<div class="registered-user-information-wrapper">
+				<span class="registered-user-first-name">Vardas</span>
+				<span class="registered-user-last-name">Pavardė</span>
+				<span class="registered-user-email">Elektroninis paštas</span>
+			</div>
+
+			<dvi class="first-registered-user-information-wrapper">
+				<span class="first-registered-user-first-name">Jonas</span>
+				<span class="first-registered-user-last-name">Jonaitis</span>
+				<span class="first-registered-user-email">jonaitis@gmail.com</span>
+			</dvi>
+
+			<dvi class="second-registered-user-information-wrapper">
+				<span class="second-registered-user-first-name">Petras</span>
+				<span class="second-registered-user-last-name">Petraitis</span>
+				<span class="second-registered-user-email">petraitis@gmail.com</span>
+			</dvi>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,203 @@
+.registration-form-wrapper {
+	background-color: #faf18c;
+	width: 700px;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.registration-form {
+	position:relative;
+	left: 20px;
+}
+
+.first-name-wrapper {
+	display: flex;
+	justify-content: space-around;
+	width: 500px;
+	position: relative;
+	left: -15px;
+}
+
+.user-name, .user-last-name, .user-email {
+	position: relative;
+	top: 7px;
+}
+
+.last-name-wrapper {
+	display: flex;
+	width: 500px;
+	justify-content: space-around;
+	position: relative;
+	left: -12px;
+}
+
+.user-email-wrapper {
+	display: flex;
+	width: 500px;
+	justify-content: space-around;
+	position: relative;
+	left: 5px;
+}
+
+.first-input{
+	height: 25px;
+	width: 300px;
+	border-radius: 5px;
+	margin: 3px;
+	position: relative;
+	left: 85px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: none;
+	border-right: none;
+}
+
+.second-input {
+	height: 25px;
+	width: 300px;
+	border-radius: 5px;
+	margin: 3px;
+	position: relative;
+	left: 80px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: none;
+	border-right: none;
+}
+
+.third-input {
+	height: 25px;
+	width: 300px;
+	border-radius: 5px;
+	margin: 3px;
+	position: relative;
+	left: 45px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: none;
+	border-right: none;
+}
+
+.submit-form-wrapper {
+	position: relative;
+	left: 18px;
+	margin: 3px;
+}
+
+.submit-form-button {
+	width: 510px;
+	height: 25px;
+}
+
+.already-registered-user-wrapper {
+	margin-top: -15px;
+	width: 700px;
+	height: 200px;
+	background-color: #9af5b0;
+}
+
+.registered-users {
+	position: relative;
+	left: 20px;
+	top: 30px;
+}
+
+.registered-user-information-wrapper {
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid black;
+	width: 650px;
+	height: 30px;
+	position: relative;
+	left: 22px;
+	background-color: #cdb8e3;
+	top: 30px;
+}
+
+.registered-user-first-name {
+	font-weight: bold;
+	position: relative;
+	left: 100px;
+	top: 5px;
+}
+
+.registered-user-last-name {
+	font-weight: bold;
+	position: relative;
+	top: 5px;
+	left: 160px;
+}
+
+.registered-user-email {
+	font-weight: bold;
+	position: relative;
+	right: -50px;
+	top: 5px;
+}
+
+.first-registered-user-information-wrapper {
+	border: 1px solid black;
+	width: 650px;
+	height: 30px;
+	position: relative;
+	left: 22px;
+	display: flex;
+	justify-content: space-around;
+	top: 30px;
+}
+
+.first-registered-user-first-name {
+	position: relative;
+	left: -55px;
+	top: 5px;
+}
+
+.first-registered-user-last-name {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: 90px;
+	padding-top: 5px;
+	text-align: center;
+	position: relative;
+	left: 165px;
+}
+
+.first-registered-user-email {
+	position: relative;
+	right: -50px;
+	top: 5px;
+}
+
+.second-registered-user-information-wrapper {
+	border: 1px solid black;
+	width: 650px;
+	height: 30px;
+	position: relative;
+	left: 22px;
+	display: flex;
+	justify-content: space-around;
+	top: 30px;
+}
+
+.second-registered-user-first-name {
+	position: relative;
+	left: -55px;
+	top: 5px;
+}
+
+.second-registered-user-last-name {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: 90px;
+	padding-top: 5px;
+	text-align: center;
+	position: relative;
+	left: 165.5px;
+}
+
+.second-registered-user-email {
+	position: relative;
+	right: -50px;
+	top: 5px;
+}
