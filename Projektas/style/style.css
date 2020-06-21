@@ -1,0 +1,8 @@
+.main-header-information-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.logo {
+	background-color: red;
+}
