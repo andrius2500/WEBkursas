@@ -1,5 +1,508 @@
-.main-header-information-container {
-	display: flex;
-	justify-content: space-around;
+/* core style */
+
+body {
+	line-height: 1.5;
+	text-align: center;
+	margin: 0;
 }
 
+img {
+	width: 100%;
+}
+
+#showcase h1 {
+	position: fixed;
+	top: -20px;
+	left: 70px;
+	color: #f0be35;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+#showcase h3 {
+	position: fixed;
+	margin: 10px;
+	top: 25px;
+	left: 35px;
+	color: #f0be35;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+
+/* header showcase */
+
+#showcase {
+	min-height: 70px;
+}
+
+#showcase .top-header{
+	position: fixed;
+	/*background-image: url(../images/ollin-logo.webp);*/
+	background-color: #1023c9;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 70px;
+	z-index: 1;
+	opacity: 0.6;
+}
+
+
+/* menu button */
+
+.my-links {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	position: fixed;
+	top: 25px;
+	left: 180px;
+	list-style-type: none;
+	z-index: 2;
+}
+
+.read-more a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #f0be35;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.read-more a:hover {
+	color: white;
+}
+
+.social-pages {
+	display: flex;
+	position: fixed;
+	right: 50px;
+	top: 15px;
+	list-style-type: none;
+	z-index: 1;
+	margin: 0px;
+}
+
+.facebook-page, .instagram-page {
+	margin-left: 25px;
+	width: 40px;
+}
+
+.facebook-page:hover, .instagram-page:hover {
+	cursor: pointer;
+}
+
+/* burger menu */
+
+.burger-menu .line1{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 5px;
+	margin: 5px;
+	background-color: white;
+}
+
+.line2 {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 30px;
+	height: 5px;
+	margin: 5px;
+	background-color: white;
+}
+
+.line3 {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	width: 30px;
+	height: 5px;
+	margin: 5px;
+	background-color: white;
+}
+
+/* section Top Page */
+
+.ollin-background {
+	width: 100%;
+	height: 980px;
+	position: relative;
+	background-image: url(../images/bubbles-header.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.ollin-background-text {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 60px;
+	position: absolute;
+	top: 45%;
+	left: 25%;
+	color: #f0be35;
+}
+
+/* section A */
+
+#section-a {
+	width: 100%;
+	height: 1050px;
+	color: black;
+	padding: 0px;
+
+}
+
+.content-title-about-us {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f0be35;
+	font-size: 60px;
+	margin-bottom: 0px;
+	position: relative;
+	margin-top: 40px;
+	padding-bottom: 30px;
+}
+
+.first-column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 905px;
+}
+
+.second-column {
+	position: relative;
+	top: 150px;
+}
+
+.second-column iframe {
+	width: 45%;
+	height: 600px;
+}
+
+.about-us-paragraph {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f0be35;
+	font-size: 60px;
+	height: 200px;
+	position: relative;
+	top: 140px;
+}
+
+.play-button {
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	border-style: solid;
+	border-width: 30px 0px 30px 50px;
+	border-color: white white white blue;
+	position: relative;
+	bottom: 20px;
+}
+
+/* section B */
+
+#section-b {
+	width: 100%;
+	height: 1050px;
+	color: black;
+	padding: 0px;
+	background-color: #1023c9;
+}
+
+.content-title-special-offer {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f0be35;
+	font-size: 60px;
+	margin-bottom: 0px;
+	position: relative;
+	margin-top: 40px;
+	padding-bottom: 30px;
+}
+
+.special-offer-container {
+	height: 880px;
+	width: 50%;
+	/*background-color: #1023c9;*/
+	float: right;
+}
+
+.special-offer-paragraph {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f0be35;
+	font-size: 50px;
+	position: relative;
+	top: 300px;
+}
+
+/* sectio B slideshow */
+
+.slide-container {
+	width: 45%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	top: 120px;
+}
+
+.image-container {
+	display: flex;
+	width: 100%;
+	position: relative;
+	transition: right 2s;
+}
+
+.button-container {
+	position: relative;
+	top: 50px;
+}
+
+.slider-button {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: black;
+}
+
+#slider-image-1:target ~ .image-container{
+	right: 0%;
+}
+
+#slider-image-2:target ~ .image-container{
+	right: 100%;
+}
+
+#slider-image-3:target ~ .image-container{
+	right: 200%;
+}
+
+/* section C */
+
+.top-products-heading {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f0be35;
+	font-size: 60px;
+	margin-bottom: 0px;
+	position: relative;
+	margin-top: 40px;
+	padding-bottom: 30px;
+}
+
+.top-products-wrapper {
+	display: flex;
+	margin: 10px;
+}
+
+.product {
+	margin: 10px;
+}
+
+.product h3 {
+	font-size: 25px;
+}
+
+.product-image {
+	border-radius: 350px;
+}
+
+/* section D */
+
+#section-d {
+	width: 100%;
+	height: 1050px;
+	color: black;
+	padding: 0px;
+	background-color: #1023c9;
+}
+
+.registration-form-heading {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f0be35;
+	font-size: 60px;
+	margin-bottom: 0px;
+	position: relative;
+	margin-top: 40px;
+	padding-bottom: 30px;
+}
+
+.registration-form-paraghraph-wrapper {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 860px;
+
+}
+
+.registration-form-paraghraph {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f0be35;
+	font-size: 50px;
+	position: relative;
+	top: 200px;
+}
+
+.registration-information-container {
+	float: right;
+	position: relative;
+	top: 300px;
+	right: 10%;
+}
+
+.registration-information-container div{
+	margin: auto;
+	padding: 5px;
+	width: 400px;
+	position: relative;
+}
+
+.user-name, .user-last-name, .user-email, .user-company-name, .user-telephone-number {
+	float: left;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 35px;
+	position: relative;
+}
+
+.first-input, .second-input, .third-input, .forth-input, .fifth-input {
+	width: 150%;
+	height: 45px;
+	margin: 5px;
+	border-radius: 8px;
+	position: relative;
+}
+
+.first-input {
+	right: 100px;
+	top: -140px;
+}
+
+.second-input {
+	right: 100px;
+	top: -120px;
+}
+
+.third-input {
+	right: 100px;
+	top: -100px;
+}
+
+.forth-input {
+	right: 100px;
+	top: -80px;
+}
+
+.fifth-input {
+	right: 100px;
+	top: -60px;
+}
+
+.submit-form-button {
+	width: 70%;
+	position: relative;
+	top: -40px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: yellow;
+	color: black;
+	text-transform: uppercase;
+}
+
+
+/* Footer */
+
+#section-e {
+	width: 100%;
+	height: 900px;
+	color: black;
+	padding: 0px;
+}
+
+.companies-contacts-heading {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f0be35;
+	font-size: 60px;
+	margin-bottom: 0px;
+	position: relative;
+	margin-top: 40px;
+	padding-bottom: 30px;
+}
+
+.companies-information {
+	float: right;
+	position: relative;
+	top: 20%;
+	right: 10%;
+
+}
+
+.companies-location-map {
+	float: left;
+	position: relative;
+	top: 5%;
+	left: 5%;
+}
+
+.companies-location-map iframe {
+	width: 250%;
+	height: 600px;
+	border-radius: 60px;
+}
+
+.main-bold {
+	color: #f0be35;
+	font-size: 40px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.copyright {
+	position: relative;
+	top: 800px;
+	background: black;
+	color: white;
+	height: 80px;
+	background-color: #4a4949;
+}
+
+.copyright p {
+	text-align: center;
+}
+
+/* kompiuteris */
+@media screen and (min-width: 800px) {
+
+	.card-content {
+		display: none;
+	}
+
+	.burger-menu {
+		display: none;
+	}
+
+}
+
+/* mobilus */
+@media screen and (max-width: 800px) {
+
+	.my-links {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+		transform: translateX(200%);
+	}
+
+	.menu-active {
+		transform: translateX(120%);
+		transition: 1s;
+	}
+
+	.special-offer-image-1, .special-offer-image-2, .special-offer-image-3 {
+		width: 70%;
+	}
+}
