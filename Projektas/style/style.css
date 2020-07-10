@@ -4,6 +4,7 @@ body {
 	line-height: 1.5;
 	text-align: center;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 img {
@@ -11,26 +12,12 @@ img {
 }
 
 #showcase h1 {
+	width: 180px;
 	position: fixed;
-	top: -20px;
-	left: 70px;
-	color: #f0be35;
-	letter-spacing: 5px;
-	text-transform: uppercase;
-	z-index: 2;
+	top: -15px;
+	left: 50px;
+	z-index: 1;
 }
-
-#showcase h3 {
-	position: fixed;
-	margin: 10px;
-	top: 25px;
-	left: 35px;
-	color: #f0be35;
-	letter-spacing: 5px;
-	text-transform: uppercase;
-	z-index: 2;
-}
-
 
 /* header showcase */
 
@@ -38,16 +25,15 @@ img {
 	min-height: 70px;
 }
 
-#showcase .top-header{
+.top-header{
 	position: fixed;
-	/*background-image: url(../images/ollin-logo.webp);*/
 	background-color: rgb(6, 30, 71);
 	background-position: center;
 	background-size: cover;
 	width: 100%;
 	height: 70px;
 	z-index: 1;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 
@@ -78,7 +64,7 @@ img {
 .social-pages {
 	display: flex;
 	position: fixed;
-	right: 50px;
+	right: 35px;
 	top: 15px;
 	list-style-type: none;
 	z-index: 1;
@@ -87,47 +73,13 @@ img {
 
 .facebook-page, .instagram-page {
 	margin-left: 25px;
-	width: 40px;
+	width: 35px;
 }
 
 .facebook-page:hover, .instagram-page:hover {
 	cursor: pointer;
 }
 
-/* burger menu */
-
-.burger-menu .line1{
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	width: 30px;
-	height: 5px;
-	margin: 5px;
-	background-color: white;
-	z-index: 1;
-}
-
-.line2 {
-	position: absolute;
-	top: 20px;
-	right: 10px;
-	width: 30px;
-	height: 5px;
-	margin: 5px;
-	background-color: white;
-	z-index: 1;
-}
-
-.line3 {
-	position: absolute;
-	top: 30px;
-	right: 10px;
-	width: 30px;
-	height: 5px;
-	margin: 5px;
-	background-color: white;
-	z-index: 1;
-}
 
 /* section Top Page */
 
@@ -192,22 +144,11 @@ img {
 .about-us-paragraph {
 	font-family: 'Ubuntu', sans-serif;
 	color: rgb(6, 30, 71);
-	font-size: 60px;
+	font-size: 50px;
 	height: 200px;
 	position: relative;
-	top: 140px;
+	top: 200px;
 }
-
-/*.play-button {
-	box-sizing: border-box;
-	width: 30px;
-	height: 30px;
-	border-style: solid;
-	border-width: 30px 0px 30px 50px;
-	border-color: rgb(255, 182, 52) rgb(255, 182, 52) rgb(255, 182, 52) rgb(6, 30, 71);;;
-	position: relative;
-	bottom: 20px;
-}*/
 
 /* section B */
 
@@ -344,62 +285,45 @@ img {
 }
 
 .registration-information-container {
-	float: right;
 	position: relative;
-	top: 300px;
-	right: 10%;
+	top: 10%;
+	width: 100%;
+	padding: 0 20px;
 }
 
-.registration-information-container div{
+.contact-form {
+	max-width: 500px;
 	margin: auto;
-	padding: 5px;
-	width: 400px;
-	position: relative;
+	background-color: rgb(0,0,0,0.8);
+	padding: 20px 50px 40px 50px;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
-
-.first-input, .second-input, .third-input, .forth-input, .fifth-input {
-	width: 150%;
-	height: 45px;
-	margin: 5px;
-	border-radius: 8px;
-	position: relative;
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
 }
 
-.first-input {
-	right: 100px;
-	top: -140px;
+.information-input {
+	margin: 10px 0;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px solid rgb(255, 182, 52);
+	padding: 30px;
+	color: rgb(255, 182, 52);
 }
 
-.second-input {
-	right: 100px;
-	top: -120px;
-}
-
-.third-input {
-	right: 100px;
-	top: -100px;
-}
-
-.forth-input {
-	right: 100px;
-	top: -80px;
-}
-
-.fifth-input {
-	right: 100px;
-	top: -60px;
-}
-
-.submit-form-button {
-	width: 70%;
-	position: relative;
-	top: -40px;
-	height: 50px;
-	border-radius: 50px;
+.submit-button {
 	background-color: rgb(255, 182, 52);
-	color: black;
+	padding: 15px;
+	margin-top: 15px;
+	border-radius: 10px;
+	color: rgb(6, 30, 71);
 	text-transform: uppercase;
+	width: 100%;
+	font-weight: bold;
 }
 
 
@@ -418,82 +342,130 @@ img {
 }
 
 .companies-information {
+	width: 100%;
 	float: right;
 	position: relative;
-	top: 20%;
-	right: 10%;
 	color: rgb(6, 30, 71);
 	font-size: 40px;
 	font-family: 'Ubuntu', sans-serif;
 }
 
 .companies-location-map {
-	float: left;
+	width: 100%;
+	height: 450px;
 	position: relative;
-	top: 10%;
-	left: 5%;
+	overflow: hidden;
 }
 
 .companies-location-map iframe {
-	width: 220%;
-	height: 500px;
-	border-radius: 60px;
+	width: 100%;
 }
+
 
 .copyright {
 	position: relative;
-	top: 800px;
-	background: black;
-	color: white;
-	height: 80px;
+	height: 70px;
 	background-color: #4a4949;
 }
 
 .copyright p {
 	position: relative;
-	left: 10%;
 	top: 45%;
 	font-size: 20px;
 	font-family: 'Poppins', sans-serif;
 	color: #a3a3a3;
 }
 
-/* kompiuteris */
-@media screen and (min-width: 1000px) {
-
-	.burger-menu {
-		display: none;
-	}
-
-}
 
 /* mobilus */
 @media screen and (max-width: 1000px) {
 
+/* showcase */
+
+	#showcase h1 {
+		width: 150px;
+		top: -10px;
+	}
+
 	.social-pages {
-	position: absolute;
-	left: 200px;
-	}
+		position: fixed;
+		left: 170px;
 
-	.my-links {
-		position: absolute;
-		right: 10px;
-		top: 10px;
-		display: flex;
-		flex-direction: column;
-		width: 30%;
-		transform: translateX(200%);
-	}
-
-	.menu-active {
-		transform: translateX(120%);
-		transition: 1s;
 	}
 
 	.ollin-background-text {
 		position: absolute;
 		left: 5%;
 	}
+
+
+/* burger menu */
+
+	.read-more a {
+		color: white;
+		position:relative;
+		left: -50%;
+		top: 40%;
+		font-size: 15px;
+	}
+
+	.my-links {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 53px;
+		left: 0%;
+		width: 100%;
+		height: 200px;
+		background-color: rgb(6, 30, 71);
+		opacity: 0.8;
+		transform: translateY(-135%);
+	}
+
+	.read-more a:hover {
+		color: rgb(255, 182, 52);
+	}
+
+
+	.menu-active {
+		transform: translateY(0%);
+		transition: 1s;
+	}
+
+
+	.line1 {
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		width: 30px;
+		height: 5px;
+		margin: 5px;
+		background-color: white;
+		z-index: 1;
+	}
+
+	.line2 {
+		position: fixed;
+		top: 20px;
+		right: 10px;
+		width: 30px;
+		height: 5px;
+		margin: 5px;
+		background-color: white;
+		z-index: 1;
+	}
+
+	.line3 {
+		position: fixed;
+		top: 30px;
+		right: 10px;
+		width: 30px;
+		height: 5px;
+		margin: 5px;
+		background-color: white;
+		z-index: 1;
+	}
+
 
 /* Section A */
 
@@ -526,6 +498,7 @@ img {
 
 	.content-title-special-offer {
 		position: relative;
+		margin: auto;
 		right: 25%;
 	}
 
@@ -587,21 +560,20 @@ img {
 		width: 100%;
 	}
 
-	.first-input, .second-input, .third-input, .forth-input, .fifth-input {
-		width: 100%;
-		position: relative;
-	}
 
 	.registration-information-container {
 		position: relative;
-		top: -550px;
+		top: -650px;
 	}
 
-	.submit-form-button {
-		width: 70%;
-		position: relative;
-		right: 25%;
+	.contact-form {
+		padding: 10px 40px 30px 40px;
 	}
+
+	.information-input {
+		padding: 15px;
+	}
+
 
 /* Section e */
 
@@ -609,34 +581,15 @@ img {
 		height: 950px;
 	}
 
-	.companies-contacts-heading {
-		position: relative;
-		left: 25%;
-		width: 100%;
-	}
-
 	.companies-information {
-		position: relative;
-		top: -300px;
 		font-size: 30px;
-		right: 20%;
-	}
-
-	.companies-location-map {
 		position: relative;
-		top: -50px;
-		left: 13%;
+		top: -2%;
 	}
 
-	.companies-location-map iframe {
-		width: 200%;
-		height: 400px;
-		border-radius: 60px;
-	}
-
-	.copyright p {
+	.copyright {
 		position: relative;
-		left: 25%;
-		font-size: 15px;
+		top: 10%;
 	}
+
 }
