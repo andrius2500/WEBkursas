@@ -44,7 +44,7 @@ img {
 	justify-content: space-around;
 	width: 70%;
 	position: fixed;
-	top: 25px;
+	top: 1%;
 	left: 180px;
 	list-style-type: none;
 	z-index: 2;
@@ -183,7 +183,7 @@ img {
 /* sectio B slideshow */
 
 .slide-container {
-	width: 45%;
+	width: 40%;
 	margin: auto;
 	overflow: hidden;
 	position: relative;
@@ -192,35 +192,37 @@ img {
 
 .image-container {
 	display: flex;
-	width: 100%;
 	position: relative;
-	transition: right 2s;
+	width: 100%;
 }
 
 .button-container {
 	position: relative;
-	top: 50px;
+	top: -15%;
+
 }
 
-.slider-button {
-	display: inline-block;
-	height: 10px;
-	width: 10px;
-	border-radius: 5px;
-	background-color: black;
+#previous-button {
+	border: solid black;
+	border-width: 0 5px 5px 0;
+	padding: 10px;
+	background-color: transparent;
+	transform: rotate(135deg);
+	position: relative;
+	left: -17%;
+	outline: none;
 }
 
-#slider-image-1:target ~ .image-container{
-	right: 0%;
+#next-button {
+	border-width: 0 5px 5px 0;
+	padding: 10px;
+	background-color: transparent;
+	transform: rotate(-45deg);
+	position: relative;
+	right: -17%;
+	outline: none;
 }
 
-#slider-image-2:target ~ .image-container{
-	right: 100%;
-}
-
-#slider-image-3:target ~ .image-container{
-	right: 200%;
-}
 
 /* section C */
 #section-c {
@@ -240,6 +242,8 @@ img {
 
 .product {
 	margin: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	color: rgb(6, 30, 71);
 }
 
 .product h3 {
@@ -350,6 +354,11 @@ img {
 	font-family: 'Ubuntu', sans-serif;
 }
 
+.companies-information a{
+	text-decoration: none;
+	color: rgb(6, 30, 71);
+}
+
 .companies-location-map {
 	width: 100%;
 	height: 450px;
@@ -364,13 +373,14 @@ img {
 
 .copyright {
 	position: relative;
+	bottom: -3%;
 	height: 70px;
 	background-color: #4a4949;
 }
 
 .copyright p {
 	position: relative;
-	top: 45%;
+	top: 40%;
 	font-size: 20px;
 	font-family: 'Poppins', sans-serif;
 	color: #a3a3a3;
@@ -535,7 +545,7 @@ img {
 /* Section C */
 
 	#section-c {
-		height: 1000px;
+		height: 1700px;
 	}
 
 	.top-products-heading {
@@ -544,8 +554,18 @@ img {
 	}
 
 	.top-products-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 		position: relative;
-		top: -50px;
+		top: -130px;
+	}
+
+	.product-image {
+		border-radius: 0px;
+		width: 50%;
+		height: 350px;
+
 	}
 
 /* Section D */
@@ -575,7 +595,7 @@ img {
 	}
 
 
-/* Section e */
+/* Section E */
 
 	#section-e {
 		height: 950px;
