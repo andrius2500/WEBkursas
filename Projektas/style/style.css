@@ -14,8 +14,8 @@ img {
 #showcase h1 {
 	width: 180px;
 	position: fixed;
-	top: -15px;
-	left: 50px;
+	top: -10px;
+	left: 40px;
 	z-index: 1;
 }
 
@@ -27,11 +27,12 @@ img {
 
 .top-header{
 	position: fixed;
+	top: 0%;
 	background-color: rgb(6, 30, 71);
 	background-position: center;
 	background-size: cover;
 	width: 100%;
-	height: 70px;
+	height: 87px;
 	z-index: 1;
 	opacity: 0.8;
 }
@@ -39,41 +40,41 @@ img {
 
 /* menu button */
 
-.my-links {
+.my-links-wrapper {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 	width: 70%;
 	position: fixed;
-	top: 1%;
-	left: 180px;
+	top: 3%;
+	left: 210px;
 	list-style-type: none;
-	z-index: 2;
+	z-index: 1;
 }
 
-.read-more a{
+.my-links a{
 	text-decoration: none;
 	font-size: 18px;
 	color: rgb(255, 182, 52);
 	font-family: 'Ubuntu', sans-serif;
 }
 
-.read-more a:hover {
+.my-links a:hover {
 	color: white;
 }
 
 .social-pages {
 	display: flex;
 	position: fixed;
-	right: 35px;
-	top: 15px;
+	right: -2%;
+	top: 5px;
 	list-style-type: none;
 	z-index: 1;
-	margin: 0px;
 }
 
 .facebook-page, .instagram-page {
 	margin-left: 25px;
-	width: 35px;
+	width: 20%;
 }
 
 .facebook-page:hover, .instagram-page:hover {
@@ -93,13 +94,14 @@ img {
 	background-size: cover;
 }
 
-.ollin-background-text {
+.ollin-background-text  {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 60px;
+	font-size: 4vw;
 	position: absolute;
-	top: 45%;
-	left: 25%;
+	top: 40%;
+	left: 19%;
 	color: rgb(255, 182, 52);
+
 }
 
 /* section A */
@@ -138,8 +140,8 @@ img {
 	width: 45%;
 	height: 600px;
 	background-color: black;
+	outline: none;
 }
-
 
 .about-us-paragraph {
 	font-family: 'Ubuntu', sans-serif;
@@ -163,7 +165,7 @@ img {
 	font-family: 'Ubuntu', sans-serif;
 	color: rgb(255, 182, 52);
 	font-size: 60px;
-	margin-top: 0px;
+	margin: 0px;
 }
 
 .special-offer-container {
@@ -269,7 +271,6 @@ img {
 	font-size: 60px;
 	position: relative;
 	margin-top: 0px;
-
 }
 
 .registration-form-paraghraph-wrapper {
@@ -277,7 +278,6 @@ img {
 	width: 50%;
 	padding: 10px;
 	height: 860px;
-
 }
 
 .registration-form-paraghraph {
@@ -290,13 +290,11 @@ img {
 
 .registration-information-container {
 	position: relative;
-	top: 10%;
-	width: 100%;
-	padding: 0 20px;
+	top: 11%;
 }
 
 .contact-form {
-	max-width: 500px;
+	width: 35%;
 	margin: auto;
 	background-color: rgb(0,0,0,0.8);
 	padding: 20px 50px 40px 50px;
@@ -387,31 +385,88 @@ img {
 }
 
 
+/* planšetė */
+@media only screen and (max-width: 1200px) {
+
+/* showcase */
+	#showcase h1 {
+		width: 150px;
+		top: -5px;
+	}
+
+	.my-links-wrapper {
+		position: fixed;
+		left: 19%;
+	}
+
+	.my-links a {
+		font-size: 14px;
+	}
+
+	.facebook-page, .instagram-page {
+		width: 16%;
+	}
+
+	.social-pages {
+		right: -4%;
+		top: 1%;
+	}
+
+	.ollin-background-text {
+		font-size: 5vw;
+		left: 15%;
+	}
+
+/* section A */
+	.second-column video {
+		height: 400px;
+		position: relative;
+		top: 60px;
+	}
+
+/* section D */
+
+	.registration-form-paraghraph {
+		font-size: 40px;
+	}
+
+}
+
 /* mobilus */
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
 
 /* showcase */
 
+	.top-header {
+		height: 70px;
+	}
+
 	#showcase h1 {
-		width: 150px;
+		width: 145px;
 		top: -10px;
 	}
 
 	.social-pages {
+		width: 210px;
 		position: fixed;
-		left: 170px;
+		left: 150px;
+		top: 0%
+	}
 
+	.my-links {
+		z-index: 1;
 	}
 
 	.ollin-background-text {
+		font-size: 7vw;
 		position: absolute;
-		left: 5%;
+		left: 0%;
 	}
 
 
 /* burger menu */
 
-	.read-more a {
+	.my-links a {
 		color: white;
 		position:relative;
 		left: -50%;
@@ -421,7 +476,8 @@ img {
 
 	.my-links {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
+		align-items: center;
 		position: fixed;
 		top: 53px;
 		left: 0%;
@@ -432,48 +488,79 @@ img {
 		transform: translateY(-135%);
 	}
 
-	.read-more a:hover {
+	.my-links a:hover {
 		color: rgb(255, 182, 52);
 	}
 
+	.read-more-about-us {
+		position: fixed;
+		top: 0px;
+		left: 50%;
+	}
+
+	.read-more-catalogue {
+		position: fixed;
+		top: 30px;
+		left: 50%;
+	}
+
+	.read-more-special-offer {
+		position: fixed;
+		top: 60px;
+		left: 50%;
+	}
+
+	.read-more-top-products{
+		position: fixed;
+		top: 90px;
+		left: 50%;
+	}
+
+	.read-more-registration {
+		position: fixed;
+		top: 120px;
+		left: 50%;
+	}
+
+	.read-more-contacts{
+		position: fixed;
+		top: 150px;
+		left: 50%;
+	}
 
 	.menu-active {
 		transform: translateY(0%);
 		transition: 1s;
 	}
 
+	.burger-menu {
+		width: 38px;
+		height: 3%;
+		position: fixed;
+		z-index: 1;
+		top: 1%;
+		right: 9px;
+	}
 
 	.line1 {
-		position: fixed;
-		top: 10px;
-		right: 10px;
 		width: 30px;
 		height: 5px;
-		margin: 5px;
+		margin: 4px;
 		background-color: white;
-		z-index: 1;
 	}
 
 	.line2 {
-		position: fixed;
-		top: 20px;
-		right: 10px;
 		width: 30px;
 		height: 5px;
-		margin: 5px;
+		margin: 4px;
 		background-color: white;
-		z-index: 1;
 	}
 
 	.line3 {
-		position: fixed;
-		top: 30px;
-		right: 10px;
 		width: 30px;
 		height: 5px;
-		margin: 5px;
+		margin: 4px;
 		background-color: white;
-		z-index: 1;
 	}
 
 
@@ -507,9 +594,11 @@ img {
 	}
 
 	.content-title-special-offer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 		position: relative;
-		margin: auto;
-		right: 25%;
+		top: -95px;
 	}
 
 	.special-offer-container {
@@ -517,7 +606,7 @@ img {
 	}
 
 	.special-offer-paragraph {
-		font-size: 30px;
+		font-size: 35px;
 		position: relative;
 		top: 0px;
 	}
@@ -545,7 +634,7 @@ img {
 /* Section C */
 
 	#section-c {
-		height: 1700px;
+		height: 1870px;
 	}
 
 	.top-products-heading {
@@ -588,12 +677,12 @@ img {
 
 	.contact-form {
 		padding: 10px 40px 30px 40px;
+		width: 55%;
 	}
 
 	.information-input {
 		padding: 15px;
 	}
-
 
 /* Section E */
 
@@ -604,12 +693,12 @@ img {
 	.companies-information {
 		font-size: 30px;
 		position: relative;
-		top: -2%;
+		top: -3%;
 	}
 
 	.copyright {
 		position: relative;
-		top: 10%;
+		top: 11%;
 	}
 
 }

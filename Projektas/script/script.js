@@ -1,14 +1,25 @@
 
-function menuSlide() {
-	var burger = document.querySelector('.burger-menu');
-	var menuLinks = document.querySelector('.my-links');
+// mobile burger menu
+const burger = document.querySelector('.burger-menu');
+const menuLinks = document.querySelector('.my-links');
 
+function menuSlide() {
 	burger.addEventListener('click', function() {
 		menuLinks.classList.toggle('menu-active');
 	});
 }
+
 menuSlide();
 
+const aboutUs = document.querySelector('.my-links-wrapper');
+
+	function menuSlideBack() {
+	aboutUs.addEventListener('click', function() {
+		menuLinks.classList.remove('menu-active');
+	});
+}
+
+menuSlideBack();
 
 // carousel slideshow
 const carouselSlide = document.querySelector('.image-container');
